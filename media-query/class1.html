@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        .main-container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+        .container-one{
+            width: 100%;
+            height: 300px;
+            background-color: lightblue;
+            margin-top: 20px;
+            background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20240308/pngtree-colorful-mandal-design-image_15638391.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+        .container-two{
+            width: 100%;
+            height: 700px;
+            background-color: lightblue;
+            margin-top: 20px;
+            display: flex;
+            gap: 30px;
+
+        }
+        .lay1{
+            width: 130%;
+            height: 100%;
+            background-color: blue;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .con1{
+            width: 100%;
+            height: 350px;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-around;
+            
+        }
+        img{
+            height: 100%;
+        }
+        
+        .bac1{
+            width: 45%;
+            height: 95%;
+            background-color: white;
+            font-size: 25px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+           text-align: justify;
+        }
+        .bac2{
+            width: 50%;
+            height: 95%;
+            background-color: white;
+            font-size: 25px;
+
+        }
+        .con2{
+            width: 100%;
+            height: 350px;
+            background-color: green;
+
+
+        }
+        .lay2{
+            width: 70%;
+            height: 100%;
+            background-color: rgba(0, 0, 255, 0.11);
+        }
+        @media (max-width: 480px){
+            .container-one{
+               height: 600px;
+               background-image: url('https://i.pinimg.com/originals/0c/ff/ba/0cffba942d383cc12a6245f62293a530.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            }
+            .container-two{
+                height: 900px;
+                flex-direction: column;
+                
+            }
+            .lay1{
+                width: 100%;
+                height: 50%;
+            }
+            .lay2{
+                width: 100%;
+            }
+            .bac1{
+                font-size: 20px;
+            }
+            .bac2{
+                font-size: 20px;
+            }
+            img{
+            height: 100%;
+        }
+        }
+        /* media query 1024 */
+        @media (min-width: 481px)and (mix-width:1024px ){
+            
+            .container-two{
+                height: 900px;
+                flex-direction: column;
+                
+            }
+            .lay1{
+                width: 100%;
+                height: 70%;
+            }
+            .lay2{
+                width: 100%;
+                height: 30%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- main container -->
+    <div class="main-container">
+        <!-- container 1 -->
+        <div class="container-one">
+            
+        </div>
+
+        <div class="container-two">
+            <!-- sec one -->
+            <div class="lay1">
+                <!-- con one -->
+                <div class="con1">
+
+                    <div class="bac1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam laborum dolorem repellat consequatur facere autem suscipit dolore, numquam ea, alias illo aliquid? Eius facilis voluptate autem quae, consectetur odio porro.</div>
+
+                    <div class="bac2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas aut aperiam labore vel, deserunt sed veniam corporis inventore ullam quod impedit vero ex harum nisi at, non nemo, ipsa dolorem.</div>
+                </div>
+                <!-- con  two -->
+               <div class="con2">
+                <img src="https://m.media-amazon.com/images/I/51tKIR7GWYL.jpg" alt="">
+               </div>
+            </div>
+            <div class="lay2">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
